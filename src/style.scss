@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App{
+  display: flex;
+  justify-content: center;
+  font-family: 'Manrope', sans-serif;
+    .app_wrapper{
+        background:lime;
+   width:80%;
+   height: 100vh;
+.link{
+  text-decoration: none;
+  color: inherit;
+}
+  //  NAVBAR STYLING
+   .nav_container{
+background: firebrick;
+margin: 1rem 0;
+padding: 0.4rem;
+.nav_wrapper{
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    .logo{
+      flex:1;
+    }
+    .links{
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span{
+        display: flex;
+        gap: 1rem;
+        justify-content: space-around;
+      }
+      .write{
+        .link{
+          background: lime;
+        }
+      }
+    }
+  }
+}
+   }
+    }
+}
