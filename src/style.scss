@@ -20,6 +20,10 @@
         padding: 0.6em;
    width:90%;
    height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+  //  align-items: center;
 .link{
   text-decoration: none;
   color: inherit;
@@ -90,5 +94,21 @@ color: var(--light-text);
   }
 }
    }
+
+  //  FOOTERS STYLING
+  .footer_container{
+    width: 100%;
+    margin: auto;
+    padding:0.4em;
+    .footer_wrapper{
+      display:flex;
+      flex-direction: column;
+      gap:0.4em;
+      .privacy{
+        text-decoration: underline;
+      }
+    }
+  }
+
     }
 }
