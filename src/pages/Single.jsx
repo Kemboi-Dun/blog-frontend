@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Menu from "../components/Menu";
 function Single() {
   // demo data
   const demo = {
@@ -43,7 +44,9 @@ function Single() {
           <span>{demo.body}</span>
         </div>
       </div>
-      <div className="menu">M</div>
+      <div className="menu">
+        <Menu/>
+      </div>
     </div>
   );
 }
