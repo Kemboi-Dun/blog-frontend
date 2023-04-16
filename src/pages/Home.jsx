@@ -9,33 +9,32 @@ function Home() {
       id: 1,
       title: "This is the first blog.",
       body: "Developer logs suggest Apple’s long-rumored 15-inch MacBook Air could arrive soon Montana’s Looming TikTok Ban Is a Danger Tipping Point 13 Best Deals: MagSafe Accessories, Swi Games, and Phones",
-      image:
-        "https://www.thaipbsworld.com/wp-content/uploads/2023/04/Untitled-design-14-600x338.png",
+      image:"https://images.unsplash.com/photo-1629747387925-6905ff5a558a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fG1lbGFuaW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     },
     {
       id: 2,
       title: "This is the second blog.",
       body: "Developer logs suggest Apple’s long-rumored 15-inch MacBook Air could arrive soon Montana’s Looming TikTok Ban Is a Danger Tipping Point 13 Best Deals: MagSafe Accessories, Swi Games, and Phones Analysis: Jennifer Garner's return to TV much appreciated Hollywood writers vote on strike: ‘At stake the viability of TV as a career’ Silicon valediction? Our road trip to t industry hotspots as the sector cools When Will Apple Launch the iPad Mini 7?",
       image:
-        "https://s.abcnews.com/images/International/wirestory_0ea339b7be33090b222169fd433cf51c_16x9_992.jpg",
+      "https://images.unsplash.com/photo-1527201987695-67c06571957e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fG1lbGFuaW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     },
   ];
-  const [blogs, setBlogs] = useState([]);
+  // const [blogs, setBlogs] = useState([]);
 
-  const getBlogs = () => {
-    getApi
-      .get()
-      .then((res) => {
-        console.log(res.data.articles);
-        setBlogs(res.data.articles);
-      })
-      .catch(() => {
-        alert("Error fetching blogs..");
-      });
-  };
-  useEffect(() => {
-    getBlogs();
-  }, []);
+  // const getBlogs = () => {
+  //   getApi
+  //     .get()
+  //     .then((res) => {
+  //       console.log(res.data.articles);
+  //       setBlogs(res.data.articles);
+  //     })
+  //     .catch(() => {
+  //       alert("Error fetching blogs..");
+  //     });
+  // };
+  // useEffect(() => {
+  //   getBlogs();
+  // }, []);
 
   return (
     <div className="home_container">
@@ -53,13 +52,15 @@ function Home() {
 
                 <p>{blog.body}</p>
 
-                <button class="learn-more">
-  <span class="circle" aria-hidden="true">
-  <span class="icon arrow"></span>
+                <button className="learn-more">
+                <Link className="link" to={`/post/${blog.id}`}>
+  <span className="circle" aria-hidden="true">
+  <span className="icon arrow"></span>
   </span>
-  <span class="button-text"> <Link className="link" to={`/post/${blog.id}`}>
+  <span className="button-text"> 
                   Read More
-                </Link></span>
+                </span>
+                </Link>
 </button>
 
               </div>
