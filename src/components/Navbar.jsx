@@ -27,17 +27,18 @@ function Navbar() {
             <Link className="link" to="/?cat=food">
               <h6>Food</h6>
             </Link>
+            <div className="write">
+              <Link className="link" to="/write">
+                Write
+              </Link>
+            </div>
             <span>
               <p>John</p>
               <Link className="link" to="/">
                 Logout
               </Link>
             </span>
-            <div className="write">
-              <Link className="link" to="/write">
-                Write
-              </Link>
-            </div>
+          
           </div>
         </nav>
       </div>
