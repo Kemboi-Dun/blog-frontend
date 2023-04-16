@@ -11,6 +11,7 @@
   --light-text: #f8f8f8;
   --dark-text: #181818;
   --error-msg: #CD113B;
+  --light-grey: #808080;
 }
 
 .App{
@@ -619,6 +620,185 @@ line-height: 30px;
   }
 }
 
+// WRITE PAGE STYLING
+.write_container{
+  height: 100%;
+  margin-top: 0.6rem;
+  display: flex;
+  gap:20px;
+  // background: blue;
+.write_content{
+flex:5;
+display:flex;
+flex-direction: column;
+gap:1rem;
+input{
+  height:40px;
+  width:100%;
+outline: none;
+font-size: 16px;
+padding: 0.2em 0.4em;
+border: 1px solid var(--light-grey);
+}
+.write_editor{
+  height: 350px;
+  // overflow: scroll;
+  border: 1px solid var(  --light-grey);
+  .editor{
+    height: 100%;
+    border: none;
+    overflow: hidden;
+  }
+}
+}
+.write_menu{
+  flex:2;
+  display: flex;
+  flex-direction: column;
+  gap:0.8rem;
+  justify-content: space-between;
+  // background: teal;  
+  .item_1{
+    display: flex;
+    flex-direction: column;
+    gap:0.5em;
+    span{
+      display: flex;
+      justify-content: space-between;
+    gap:2rem;
+      align-items: center;
+      width:200px;
+    }
+    select{
+      border: none;
+      padding:0.4em;
+      outline:none;
+      cursor:pointer;
+      font-size: 16px;
+      // background: var(--dark-green);
+    }
+    // background: lime;
+    label{
+      display: flex;
+      gap:0.4em;
+      align-items: baseline;
+     
+      cursor: pointer;
+      p{
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+    }
+    .buttons{
+      display: flex;
+      gap:2em;
+      margin: 0.3em 0;
+      button{
+        cursor: pointer;
+      }
+      .update, .cancel{
+        background: var(--light-blue);
+        color: var(--light-text);
+        border: none;
+        border-radius: 4px;
+        width: max-content;
+        padding: 0.8rem 1rem;
+        font-size: 18px;
+        font-weight: 200;
+        // cursor: pointer;
+
+        &:hover{
+          background: var(--dark-text);
+        
+        }
+      }
+      .cancel{
+        background: var(--error-msg);
+      }
+      .publish {
+        // text-transform: uppercase;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background: #183153;
+        font-family: "Montserrat", sans-serif;
+        box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        border: none;
+       }
+       
+       .publish:after {
+        content: " ";
+        width: 0%;
+        height: 100%;
+        background: var(--dark-green);
+        position: absolute;
+        transition: all 0.4s ease-in-out;
+        right: 0;
+       }
+       
+       .publish:hover::after {
+        right: auto;
+        left: 0;
+        width: 100%;
+       }
+       
+       .publish span {
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+        padding: 18px 25px;
+        color: #fff;
+        font-size: 1.125em;
+        font-weight: 700;
+        letter-spacing: 0.3em;
+        z-index: 20;
+        transition: all 0.3s ease-in-out;
+       }
+       
+       .publish:hover span {
+        color: var(--light-text);
+        animation: scaleUp 0.3s ease-in-out;
+       }
+       
+       @keyframes scaleUp {
+        0% {
+         transform: scale(1);
+        }
+       
+        50% {
+         transform: scale(0.95);
+        }
+       
+        100% {
+         transform: scale(1);
+        }
+       }
+       
+    }
+  }
+  .item_2{
+    display: flex;
+    flex-direction: column;
+    gap:0.1em;
+    .radio_items{
+      overflow-y: scroll;
+      // background:teal;
+      height: 180px;
+      .item_radio{
+        display: flex;
+        align-items: center;
+        gap:0.6em;
+        
+        // cursor:pointer;
+      }
+    }
+   
+  }
+}
+}
 
   //  FOOTERS STYLING
   .footer_container{

@@ -32,11 +32,11 @@ function Menu() {
 
           <h2>{post.title}</h2>
           <button>
-            <Link class="fancy" to={`/post/${post.id}`}>
-  <span class="top-key"></span>
-  <span class="text">Read More</span>
-  <span class="bottom-key-1"></span>
-  <span class="bottom-key-2"></span>
+            <Link className="fancy" to={`/post/${post.id}`}>
+  <span className="top-key"></span>
+  <span className="text">Read More</span>
+  <span className="bottom-key-1"></span>
+  <span className ="bottom-key-2"></span>
 </Link>
           </button>
 
