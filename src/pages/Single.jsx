@@ -45,7 +45,7 @@ function Single() {
         </div>
       </div>
       <div className="menu">
-        <Menu/>
+        <Menu />
       </div>
     </div>
   );

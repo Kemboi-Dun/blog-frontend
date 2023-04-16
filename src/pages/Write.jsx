@@ -55,9 +55,9 @@ function Write() {
             <p>Select Image</p>
           </label>
           <div className="buttons">
-          <button className="publish">  
-  <span>Post</span>
-</button>
+            <button className="publish">
+              <span>Post</span>
+            </button>
             {/* <button className="update">Update</button> */}
             <button className="cancel">Cancel</button>
           </div>

@@ -21,25 +21,21 @@ function Menu() {
   ];
   return (
     <div className="menu">
-
       <h1>Related Posts</h1>
 
       {posts.map((post) => (
-
         <div className="post" key={post.id}>
-
           <img src={post.image} alt="" />
 
           <h2>{post.title}</h2>
           <button>
             <Link className="fancy" to={`/post/${post.id}`}>
-  <span className="top-key"></span>
-  <span className="text">Read More</span>
-  <span className="bottom-key-1"></span>
-  <span className ="bottom-key-2"></span>
-</Link>
+              <span className="top-key"></span>
+              <span className="text">Read More</span>
+              <span className="bottom-key-1"></span>
+              <span className="bottom-key-2"></span>
+            </Link>
           </button>
-
         </div>
       ))}
     </div>

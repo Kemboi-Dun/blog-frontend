@@ -7,16 +7,14 @@ function Navbar() {
       <div className="nav_wrapper">
         <nav>
           <div className="logo">
-            <Link className="link"  to="/">
-            <h3>Uncover</h3>
+            <Link className="link" to="/">
+              <h3>Uncover</h3>
             </Link>
             <div className="logo_dot"></div>
           </div>
           <div className="links">
             <Link className="link" to="/?cat=technology">
-              <h6>
-              Technology
-              </h6>
+              <h6>Technology</h6>
             </Link>
             <Link className="link" to="/?cat=art">
               <h6>Art</h6>
@@ -33,12 +31,14 @@ function Navbar() {
               </Link>
             </div>
             <span>
-              <p>John</p>
+              <p>
+                <i class="fa-solid fa-user" style={{ marginRight: "6px" }}></i>
+                John
+              </p>
               <Link className="link" to="/">
                 Logout
               </Link>
             </span>
-          
           </div>
         </nav>
       </div>
