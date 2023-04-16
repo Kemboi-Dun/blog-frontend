@@ -66,6 +66,7 @@
       form{
         display:flex;
         flex-direction: column;
+        gap: 0.4em;
         justify-content: space-evenly;
         label{
           font-size: 18px;
@@ -138,7 +139,7 @@
           z-index: 1;
           border-left: 1px solid var(--dark-blue);
           border-right: 1px solid var(--dark-blue);
-          border-radius:0;
+          border-radius:4px;
         }
         
         .btn:hover::before {
